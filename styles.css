@@ -1,0 +1,35 @@
+/*general styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*styles for header*/
+header li{
+    display: inline-block;
+}
+
+.advertisement{
+    height: 50px;
+    text-align: center;
+}
+.advertisement li
+{
+    height: 50px;
+    text-align: center;
+    width: calc(27% - 60px);
+    padding: 0 30px;
+    line-height: 50px;
+}
+.advertisement img{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 10px;
+}
+
+.nav-bar{
+    background-color: #66fcf1;
+}
