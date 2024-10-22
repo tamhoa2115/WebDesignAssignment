@@ -10,12 +10,11 @@
 header li{
     display: inline-block;
 }
-
-.advertisement{
+.headerBanner{
     height: 50px;
     text-align: center;
 }
-.advertisement li
+.headerBanner li
 {
     height: 50px;
     text-align: center;
@@ -23,13 +22,55 @@ header li{
     padding: 0 30px;
     line-height: 50px;
 }
-.advertisement img{
-    height: 30px;
+.headerBanner img{
     width: 30px;
+    height: 30px;
     position: relative;
     top: 10px;
 }
 
-.nav-bar{
+.nav-container{
+    height: 50px;
     background-color: #66fcf1;
+    padding: 0 10%;
+    text-align: center;
+    float: left;
+}
+.nav-container a
+{
+    line-height: 50px;
+}
+.nav-container img{
+    height: 50px;
+}
+.nav-container li{
+    text-align: center;
+    margin: 0 5px;
+}
+
+
+/*styles for footer*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+
+.collumns{
+    display: flex; /* Sử dụng Flexbox */
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng */
+}
+
+.footer-section ul li {
+    list-style: none;
+    flex: 1 0 50%; /* Mỗi phần tử chiếm 50% chiều rộng */
+    margin: 8px 0 0; /* Thêm khoảng cách giữa các phần tử */
+    padding-left: 10px;
 }
