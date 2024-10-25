@@ -47,6 +47,7 @@ header li{
     margin: auto;
     height: 100%;
     line-height: 60px;
+    
 }
 .nav-container i
 {
@@ -68,6 +69,7 @@ header li{
 .nav-container input{
     border-radius: 5px;
     padding-left: 5px;
+    outline: none;
 }
 
 
@@ -94,7 +96,7 @@ footer {
 }
 
 .footer-section ul li {
-    list-style: none;
+    list-style-type: none;
     flex: 1 0 50%; /* Mỗi phần tử chiếm 50% chiều rộng */
     margin: 8px 0 0; /* Thêm khoảng cách giữa các phần tử */
     padding-left: 10px;
