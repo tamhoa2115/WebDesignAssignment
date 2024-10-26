@@ -114,25 +114,27 @@ header li{
     line-height: 50px;
     text-align: center;
     font-size: 26px;
-    background-color: #d7d7d7;
+    background-color: #d7d7d78e;
     top: 40%;
     opacity: 0;
+    border-radius: 6px;
 }
 .hot-sale-content:hover i{
     opacity: 1;
     transition: all 0.3s ease;
 }
 .fa-chevron-left{
-    left: -8px;
+    left: 0px;
 }
 .fa-chevron-right{
-    right: -8px;
+    right: 0px;
 }
 .hot-sale-items{
-    width: 100%;
+    width: 98%;
     height: 100%;
     position: relative;
     overflow: hidden;
+    margin: 0 auto;
 }
 .hot-sale-product-container
 {
@@ -141,7 +143,6 @@ header li{
     border: 3px solid #ddd;
     border-radius: 8px;
     background-color: white;
-    display: flex;
     position: absolute;
 }
 .hot-sale-product-container:nth-child(1){
