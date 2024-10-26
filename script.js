@@ -5,30 +5,53 @@ const hotSaleItems = document.querySelector('.hot-sale-items')
 const containerWidth = parseFloat(window.getComputedStyle(hotSaleItems).width)
 const hotSaleProduct = document.querySelectorAll('.hot-sale-product-container')
 
-let index = 0;
+let index = 0
 hotSaleProduct.forEach(items =>{
-    items.style.left = 20 * index + "%";
-    index++;
-});
+    items.style.left = 20 * index + "%"
+    index++
+})
 
-index = 0;
+index = 0
 btnLeft.addEventListener("click", function(){
-    if(index <= 0) return;
+    if(index <= 0) return
     hotSaleProduct.forEach(items => {
-        const curLeft = parseFloat(window.getComputedStyle(items).left);
-        const newLeft = curLeft + 0.2 *  containerWidth + 0.1;
-        items.style.left = newLeft + "px";
-        console.log(curLeft + " " + newLeft);
-    });
-    index--;
+        const curLeft = parseFloat(window.getComputedStyle(items).left)
+        const newLeft = curLeft + 0.2 *  containerWidth + 0.1
+        items.style.left = newLeft + "px"
+        console.log(curLeft + " " + newLeft)
+    })
+    index--
 })
 btnRight.addEventListener("click", function(){
-    if(index > hotSaleProduct.length - 6) return;
+    if(index > hotSaleProduct.length - 6) return
     hotSaleProduct.forEach(items => {
-        const curLeft = parseFloat(window.getComputedStyle(items).left);
-        const newLeft = curLeft - 0.2 *  containerWidth + 0.1;
-        items.style.left = newLeft + "px";
-        console.log(curLeft + " " + newLeft);
-    });
-    index++;
+        const curLeft = parseFloat(window.getComputedStyle(items).left)
+        const newLeft = curLeft - 0.2 *  containerWidth + 0.1
+        items.style.left = newLeft + "px"
+        console.log(curLeft + " " + newLeft)
+    })
+    index++
 })
+function hotSaleAuto()
+{
+    if(index >= hotSaleProduct.length - 6)
+    {
+        index = 0
+        hotSaleProduct.forEach(items =>{
+            items.style.left = 20 * index + "%"
+            index++
+        })
+        index = 0;
+    }
+    else
+    {
+        hotSaleProduct.forEach(items => {
+            const curLeft = parseFloat(window.getComputedStyle(items).left)
+            const newLeft = curLeft - 0.2 *  containerWidth + 0.1
+            items.style.left = newLeft + "px"
+            console.log(curLeft + " " + newLeft)
+        })
+    }
+}
+
+setInterval(hotSaleAuto, 5000)

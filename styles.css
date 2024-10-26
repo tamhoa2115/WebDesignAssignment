@@ -146,30 +146,6 @@ header li{
     position: absolute;
     transition: all 0.3s ease-in;
 }
-/* .hot-sale-product-container:nth-child(1){
-    left: 0;
-}
-.hot-sale-product-container:nth-child(2){
-    left: 20%;
-}
-.hot-sale-product-container:nth-child(3){
-    left: 40%;
-}
-.hot-sale-product-container:nth-child(4){
-    left: 60%;
-}
-.hot-sale-product-container:nth-child(5){
-    left: 80%;
-}
-.hot-sale-product-container:nth-child(6){
-    left: 100%;
-}
-.hot-sale-product-container:nth-child(7){
-    left: 120%
-}
-.hot-sale-product-container:nth-child(8){
-    left: 140%
-} */
 .product-infor{
     width: 100%;
     padding: 0 10px;
