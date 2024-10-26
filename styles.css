@@ -70,6 +70,7 @@ header li{
     color: #fff;
     margin: auto 0;
     font-size: 16px;
+    cursor: pointer;
 }
 .nav-container li a{
     text-decoration: none;
@@ -104,10 +105,10 @@ header li{
     margin: 0 5px;
 }
 .hot-sale-content{
-    height: 280px;
+    height: 330px;
     position: relative;
 }
-.hot-sale-content i{
+.hot-sale-btn i{
     position: absolute;
     height: 50px;
     width: 30px;
@@ -119,7 +120,7 @@ header li{
     opacity: 0;
     border-radius: 6px;
 }
-.hot-sale-content:hover i{
+.hot-sale-content:hover .hot-sale-btn i{
     opacity: 1;
     transition: all 0.3s ease;
 }
@@ -151,6 +152,19 @@ header li{
     padding: 0 10px;
     position: relative;
 }
+
+.product-infor li:nth-of-type(2){
+    text-align: left;
+    margin: 5px 0;
+}
+.product-infor li:last-child{
+    font-size: 14px;
+    text-align: left;
+}
+.product-infor li:last-child i{
+    height: 100%;
+    color: #FFD700;
+}
 .product-infor img
 {
     max-width: 100%;
@@ -164,7 +178,6 @@ header li{
 
 .hot-sale-container{
     list-style-type: none;
-
 }
 .product-container{
     width: calc(20% - 24px);
@@ -181,12 +194,15 @@ header li{
     display: inline;
     float: left;
 }
-.product-infor li:nth-child(1){    /*product name*/
+.product-infor li:nth-of-type(1){    /*product name*/
     margin: 15px auto;
+    text-align: center;
 }
-.product-old-price{
+.hot-sale-product-old-price{
     text-decoration: line-through;
     margin-left: 10px;
+    font-size: 12px;
+    color: #333;
 }
 .hot-sale-tag{
     background: url(./image/icons/sale-tag.png);
@@ -197,6 +213,11 @@ header li{
     position: absolute;
     left: -5px;
     top: -3px;
+}
+.hot-sale-product-new-price
+{
+    color: red;
+    font-weight: bold;
 }
 
 
@@ -213,6 +234,11 @@ footer {
     display: flex;
     justify-content: space-around;
     text-align: left;
+}
+.footer-section
+{
+    width: 20%;
+    margin: 5px auto;
 }
 .collumns{
     display: flex; /* Sử dụng Flexbox */
