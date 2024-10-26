@@ -124,10 +124,10 @@ header li{
     transition: all 0.3s ease;
 }
 .fa-chevron-left{
-    left: 0px;
+    left: -2px;
 }
 .fa-chevron-right{
-    right: 0px;
+    right: -2px;
 }
 .hot-sale-items{
     width: 98%;
@@ -144,8 +144,9 @@ header li{
     border-radius: 8px;
     background-color: white;
     position: absolute;
+    transition: all 0.3s ease-in;
 }
-.hot-sale-product-container:nth-child(1){
+/* .hot-sale-product-container:nth-child(1){
     left: 0;
 }
 .hot-sale-product-container:nth-child(2){
@@ -168,12 +169,11 @@ header li{
 }
 .hot-sale-product-container:nth-child(8){
     left: 140%
-}
+} */
 .product-infor{
     width: 100%;
     padding: 0 10px;
     position: relative;
-
 }
 .product-infor img
 {
@@ -211,6 +211,16 @@ header li{
 .product-old-price{
     text-decoration: line-through;
     margin-left: 10px;
+}
+.hot-sale-tag{
+    background: url(./image/icons/sale-tag.png);
+    background-size: contain;
+    width: 60px;
+    height: 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -5px;
+    top: -3px;
 }
 
 
