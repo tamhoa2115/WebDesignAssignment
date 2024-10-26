@@ -28,20 +28,20 @@ btnRight.addEventListener("click", function(){
         const curLeft = parseFloat(window.getComputedStyle(items).left)
         const newLeft = curLeft - 0.2 *  containerWidth + 0.1
         items.style.left = newLeft + "px"
-        console.log(curLeft + " " + newLeft)
     })
     index++
 })
 function hotSaleAuto()
 {
-    if(index >= hotSaleProduct.length - 6)
+    console.log(index)
+    if(index > hotSaleProduct.length - 6 || index < 0)
     {
         index = 0
         hotSaleProduct.forEach(items =>{
             items.style.left = 20 * index + "%"
             index++
         })
-        index = 0;
+        index = 0
     }
     else
     {
@@ -49,8 +49,8 @@ function hotSaleAuto()
             const curLeft = parseFloat(window.getComputedStyle(items).left)
             const newLeft = curLeft - 0.2 *  containerWidth + 0.1
             items.style.left = newLeft + "px"
-            console.log(curLeft + " " + newLeft)
         })
+        index++
     }
 }
 
